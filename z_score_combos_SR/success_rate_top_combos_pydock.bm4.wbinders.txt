@@ -1,0 +1,20 @@
+pydock 
+
+pdb.list.weakbinders samples = 20
+
+combo_AP_dDFIRE_AP_DCOMPLEX 0.05 0.2 0.35 
+combo_CP_BFKV_AP_DCOMPLEX 0.0 0.2 0.4 
+combo_CP_BFKV_AP_dDFIRE 0.1 0.2 0.4 
+combo_CP_SJKG_AP_DCOMPLEX 0.0 0.2 0.45 
+combo_CP_SJKG_AP_dDFIRE 0.0 0.25 0.3 
+combo_CP_SJKG_CP_BFKV 0.0 0.1 0.35 
+combo_CP_SJKG_pydock 0.0 0.15 0.5 
+combo_CP_SKOa_AP_DCOMPLEX 0.0 0.15 0.4 
+combo_CP_SKOa_AP_dDFIRE 0.0 0.25 0.45 
+combo_CP_SKOa_CP_BFKV 0.0 0.1 0.25 
+combo_CP_SKOa_CP_SJKG 0.0 0.0 0.35 
+combo_CP_SKOa_pydock 0.05 0.15 0.4 
+combo_pydock_AP_DCOMPLEX 0.05 0.2 0.45 
+combo_pydock_AP_dDFIRE 0.1 0.15 0.45 
+combo_pydock_CP_BFKV 0.1 0.2 0.45 
+

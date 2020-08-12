@@ -1,0 +1,33 @@
+/gpfs/scratch/bsc54/bsc54563/Analisys_MI_BM4_byRMSD_Zdock/
+
+pdb.list.weakbinders samples = 20
+
+combo_AP_calRWp_AP_PISA 0.05 0.25 0.45 
+combo_AP_calRWp_AP_T1 0.1 0.2 0.4 
+combo_AP_calRWp_AP_T2 0.05 0.25 0.45 
+combo_AP_calRWp_CP_TB 0.0 0.1 0.45 
+combo_AP_calRWp_zdock3 0.0 0.05 0.35 
+combo_AP_PISA_AP_T1 0.05 0.2 0.45 
+combo_AP_PISA_AP_T2 0.05 0.2 0.5 
+combo_AP_PISA_CP_TB 0.0 0.1 0.45 
+combo_AP_T1_CP_TB 0.05 0.1 0.45 
+combo_AP_T2_AP_T1 0.05 0.15 0.45 
+combo_AP_T2_CP_TB 0.0 0.1 0.45 
+combo_CP_BFKV_AP_calRWp 0.0 0.1 0.4 
+combo_CP_BFKV_AP_PISA 0.05 0.2 0.4 
+combo_CP_BFKV_AP_T1 0.0 0.05 0.3 
+combo_CP_BFKV_AP_T2 0.0 0.0 0.3 
+combo_CP_BFKV_CP_TB 0.0 0.1 0.3 
+combo_CP_BFKV_PYDOCK_TOT 0.0 0.15 0.25 
+combo_CP_BFKV_zdock3 0.0 0.05 0.3 
+combo_PYDOCK_TOT_AP_calRWp 0.0 0.15 0.45 
+combo_PYDOCK_TOT_AP_PISA 0.05 0.3 0.5 
+combo_PYDOCK_TOT_AP_T1 0.05 0.25 0.45 
+combo_PYDOCK_TOT_AP_T2 0.05 0.2 0.45 
+combo_PYDOCK_TOT_CP_TB 0.0 0.25 0.35 
+combo_PYDOCK_TOT_zdock3 0.05 0.25 0.55 
+combo_zdock3_AP_PISA 0.0 0.3 0.5 
+combo_zdock3_AP_T1 0.0 0.1 0.45 
+combo_zdock3_AP_T2 0.0 0.1 0.4 
+combo_zdock3_CP_TB 0.0 0.05 0.3 
+
