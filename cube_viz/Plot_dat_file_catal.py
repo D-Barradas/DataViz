@@ -46,7 +46,7 @@ file_df["tot"] = file_df["tot"].astype(float, copy=True)
 
 
 ## read the second file and process it tha same way
-file_list_2 = [x.split() for x in open("/Users/barradd/Desktop/PDOS-O-119.dat").readlines() ]
+file_list_2 = [x.split() for x in open(options.f2).readlines() ]
 file_df2 =  pd.DataFrame( file_list_2)
 file_df2 = file_df2[1:]
 file_df2.columns = new_header #set the header row as the df header
@@ -58,18 +58,35 @@ file_df2["tot"] = file_df2["tot"].astype(float, copy=True)
 ## Keepp columns of interest only
 df_merge = pd.concat([file_df[["#Energy","tot"]], file_df2[["#Energy","tot"]]], axis=1 )
 
+col1 = '%s'%(options.c1)
+col2 = '%s'%(options.c2)
+
 ## Rename the columns at convinience
-df_merge.columns = ['E1', '%s'%(options.c1), 'E2', '%s'%(options.c2)]
+df_merge.columns = ['E1', col1, 'E2', col2]
 
-
-### Plot the values
+#print (df_merge.columns)
+#### Plot the values
 fig, ax = plt.subplots()
+#
+# The columns are transfromed to list 
+x1 , x2, y1, y2 = df_merge["E1"].to_list(), df_merge["E2"].to_list(),df_merge[col1].to_list(),df_merge[col2].to_list()
+#print (x1 , x2, y1, y2)
 
-df_merge.plot(x="E1",y="Zn", grid=True, xlim=(-5,5), ylim=(0,5), ax=ax)
-df_merge.plot(x="E2",y="O",  grid=True, xlim=(-5,5), ylim=(0,5), style='g', ax=ax)
+## pandas has a conflict with the module intelpython3/2020.1 
+#df_merge.plot(x="E1",y='%s'%(options.c1), grid=True, xlim=(-5,5), ylim=(0,5), ax=ax)
+#df_merge.plot(x="E2",y='%s'%(options.c2),  grid=True, xlim=(-5,5), ylim=(0,5), style='g', ax=ax)
 
+# This is the block that can plot 
+ax.plot(x1,y1)
+ax.plot(x2,y2)
+ax.set_xlim(-5, 5)
+ax.set_ylim(0,5)
+ax.grid()
+ax.legend([col1,col2],fontsize=10)
 plt.xlabel("Energy")
-plt.ylabel("DOS arbitrary units")
 
-## save the figure with the name, on the same site
+plt.ylabel("DOS arbitrary units")
+fig.tight_layout()
+#
+### save the figure with the name, on the same site
 plt.savefig("%s.png"%(options.jobid),format="png",dpi=300)
