@@ -1,0 +1,8 @@
+Scoring,Top1,Top10,Top100,Method
+Pydock,7.3,20.0,41.8,Pydock
+IRAPPA Pydock,18.0,40.0,55.0,Pydock
+Zdock,5.5,20.0,36.4,Zdock
+IRAPPA Zdock,20.0,29.0,45.0,Zdock
+Swarmdock,16.0,38.0,67.0,Swardock
+IRAPPA Swardock,22.0,45.0,69.0,Swardock
+CODES,11.0,31.0,47.0,Test

@@ -1,0 +1,15 @@
+Scoring,Top1,Top10,Top100,Method
+Pydock,7.3,20.0,41.8,Pydock
+CODES-T500,3.6,16.4,40.0,Pydock
+CODES-3K,7.3,20.0,41.8,Pydock
+CODES-10K,7.3,18.2,41.8,Pydock
+IRAPPA,18.0,40.0,55.0,Pydock
+Zdock,5.5,20.0,36.4,Zdock
+CODES-T500,14.5,30.9,41.8,Zdock
+CODES-3K,10.9,25.5,43.6,Zdock
+CODES-10K,10.9,20.0,38.2,Zdock
+IRAPPA,20.0,29.0,45.0,Zdock
+Swarmdock,16.0,38.0,67.0,Swardock
+CODES-T500,14.5,25.5,49.1,Swardock
+IRAPPA,22.0,45.0,69.0,Swardock
+CODES-T500,11.0,31.0,47.0,Test
